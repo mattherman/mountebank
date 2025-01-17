@@ -1,8 +1,16 @@
-# bbyars/mountebank is no longer maintained
+# Project Status
 
-Unfortunately, there are no easy exit ramps for hobbyist open source. I've greatly enjoyed building and maintaining mountebank, but after a decade, I find myself no longer having the energy or passion to continue to do so on nights, weekends, and holidays. Handing someone else that responsibility for a 10-year-old code base that they did not write is... challenging.
+This repository is a fork of [bbyars/mountebank](https://github.com/bbyars/mountebank).
 
-Please fork at will, and thank you for being part of the community.
+In May 2024 the project maintainer announced that development was ending with the following message:
+
+> Unfortunately, there are no easy exit ramps for hobbyist open source. I've greatly enjoyed building and maintaining mountebank, but after a decade, I find myself no longer having the energy or passion to continue to do so on nights, weekends, and holidays. Handing someone else that responsibility for a 10-year-old code base that they did not write is... challenging.
+>
+> Please fork at will, and thank you for being part of the community.
+
+I'm incredibly grateful to bbyars for his work on Mountebank over the years. My hope with this fork is to at least keep up with patching dependencies and releasing new versions to npm. While the docs are bundled with the tool itself, I'm hoping to get a Github Pages site set up to host the documentation somewhere.
+
+I can't guarantee any development of new features. While I've been a user of Mountebank for years (and even maintain a client library, [MbDotNet](https://github.com/mattherman/MbDotNet)), I've never contributed to the actual codebase or maintained any other npm packages. If I get to a point where I understand things well enough to actually start building and publishing new packages, I may be open to pull requests for bug fixes or small feature additions.
 
 # Welcome, friend
 
@@ -36,8 +44,6 @@ and record-playback through proxying.
 
 ![how it works](https://github.com/bbyars/mountebank/blob/master/src/public/images/overview.gif?raw=true)
 
-See [getting started](https://www.mbtest.org/docs/gettingStarted) guide for more information.
-
 ## Install and Run
 
 Install:
@@ -48,7 +54,7 @@ Run:
 
     mb
 
-There are a number of [command line options](https://www.mbtest.org/docs/commandLine) if you need
+There are a number of command line options if you need
 to customize mountebank.
 
 All pre-release versions of mountebank are available with the `beta` [npm tag](https://www.npmjs.com/package/mountebank).
@@ -56,25 +62,11 @@ No `beta` version is published unless it has passed all tests.
 
 ## Learn More
 
-After installing and running, view the docs in your browser at <http://localhost:2525>, or visit the
-[public site](https://www.mbtest.org/).
+After installing and running, view the docs in your browser at <http://localhost:2525>.
 
-You can always learn more and support mountebank development by buying the book:
+You can always learn more by buying Brandon's book:
 
 [![Testing Microservices with Mountebank](https://github.com/bbyars/mountebank/blob/master/src/public/images/book.jpg)](https://www.manning.com/books/testing-microservices-with-mountebank?a_aid=mb&a_bid=ee3288f4)
-
-## Roadmap and Support
-
-mountebank is used by a large number of companies and I think it's important to convey my best guess as to what
-the feature roadmap is. I've adopted GitHub tools to manage the roadmap. Specifically, the
-[Roadmap project](https://github.com/bbyars/mountebank/projects/9) page shows the features by release. I generally
-re-prioritize and update the ETAs each release.
-
-Visit the [Google group](https://groups.google.com/forum/#!forum/mountebank-discuss)
-for any support questions.  Don't be shy!
-
-mountebank is provided free of charge and maintained in my free time. As such, I'm unable to make any kind
-of guarantees around either support turn-around time or release dates.
 
 ## Building
 
@@ -96,20 +88,6 @@ advertising page, those tests will fail.  I suggest that, under such circumstanc
 and let them know that their policies are causing mountebank tests to fail. You can also set
 the environment variable `MB_AIRPLANE_MODE=true`, which will avoid tests requiring your DNS resolver.
 
-## Support
-
-I make a good faith effort to monitor conversations in the [mountebank Google group](https://groups.google.com/g/mountebank-discuss).
-Given that mountebank is a free tool freely maintained in my (increasingly limited) free time,
-I make no promises about response time (or responses at all).
-
 ## Contributing
 
-Contributions are welcome!
-Some tips for contributing are in the [CONTRIBUTING.md](https://github.com/bbyars/mountebank/blob/master/CONTRIBUTING.md).
-
-[npm-badge]: https://nodei.co/npm/mountebank.png?downloads=true&downloadRank=true&stars=true
-[npm]: https://www.npmjs.com/package/mountebank
-[codeclimate-badge]: https://codeclimate.com/github/bbyars/mountebank/badges/gpa.svg
-[codeclimate]: https://codeclimate.com/github/bbyars/mountebank
-[codeclimate-coverage-badge]: https://codeclimate.com/github/bbyars/mountebank/badges/coverage.svg
-[codeclimate-coverage]: https://codeclimate.com/github/bbyars/mountebank/coverage
+See "Project Status" section for details.
