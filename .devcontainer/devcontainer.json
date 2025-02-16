@@ -1,0 +1,5 @@
+{
+  "image": "node:18-alpine",
+
+  "forwardPorts": [2525]
+}
