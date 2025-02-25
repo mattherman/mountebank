@@ -62,7 +62,8 @@ async function getHTML (path) {
     return removeKnownErrorsFrom(response.body);
 }
 
-describe('all pages in the mountebank website', function () {
+// Skipping this test since it requires the website to be up at mbtest.org
+describe.skip('all pages in the mountebank website', function () {
     this.timeout(60000);
 
     it('should be valid html', async function () {
