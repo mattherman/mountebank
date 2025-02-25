@@ -212,7 +212,7 @@ const fs = require('fs-extra'),
                 .wrap(null)
                 .options({ pidfile: options.pidfile, rcfile: options.rcfile })
                 .example('mb stop', 'Stops the process identified in mb.pid')
-                .example('mb stop --pidfile test.pid', 'Stops the process identified in test.pid')
+                .example('mb stop --pidfile test.pid', 'Stops the process identified in test.pid');
         })
         .command('restart', "Stops the server if it's running and restarts it", restartYargs => {
             restartYargs
@@ -240,7 +240,7 @@ const fs = require('fs-extra'),
                 })
                 .example('mb save --savefile config.json --removeProxies --port 3000',
                     'Saves the config without proxies into config.json by querying port 3000')
-                .example('mb save', 'Saves the config as is into mb.json by querying port 2525')
+                .example('mb save', 'Saves the config as is into mb.json by querying port 2525');
         })
         .command('replay',
             'Switches from record mode to replay by removing proxies',
@@ -252,7 +252,7 @@ const fs = require('fs-extra'),
                     .options({ port: options.port, host: options.host, rcfile: options.rcfile })
                     .example('mb replay --port 3000',
                         'Resets the configuration of mountebank running on port 3000 to remove all proxies')
-                    .example('mb replay', 'Resets the configuration of mountebank running on port 2525 to remove all proxies')
+                    .example('mb replay', 'Resets the configuration of mountebank running on port 2525 to remove all proxies');
             })
         .version()
         .wrap(null)
