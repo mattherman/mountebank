@@ -1,7 +1,5 @@
 # Project Status
 
-Testing CI
-
 This repository is a fork of [bbyars/mountebank](https://github.com/bbyars/mountebank).
 
 In May 2024 the project maintainer announced that development was ending with the following message:
@@ -10,7 +8,7 @@ In May 2024 the project maintainer announced that development was ending with th
 >
 > Please fork at will, and thank you for being part of the community.
 
-I'm incredibly grateful to bbyars for his work on Mountebank over the years. My hope with this fork is to at least keep up with patching dependencies and releasing new versions to npm. While the docs are bundled with the tool itself, I'm hoping to get a Github Pages site set up to host the documentation somewhere.
+I'm incredibly grateful to Brandon Byars for his work on Mountebank over the years. I take no credit for any of the work he did maintaining this project up until this point. My hope with this fork is to at least keep up with patching dependencies and releasing new versions to npm. While the docs are bundled with the tool itself, I'm hoping to get a Github Pages site set up to host the documentation somewhere.
 
 I can't guarantee any development of new features. While I've been a user of Mountebank for years (and even maintain a client library, [MbDotNet](https://github.com/mattherman/MbDotNet)), I've never contributed to the actual codebase or maintained any other npm packages. If I get to a point where I understand things well enough to actually start building and publishing new packages, I may be open to pull requests for bug fixes or small feature additions.
 
@@ -44,7 +42,7 @@ At the moment, the following protocols are implemented, either directly in the t
 mountebank supports mock verification, stubbing with advanced predicates, JavaScript injection,
 and record-playback through proxying.
 
-![how it works](https://github.com/bbyars/mountebank/blob/master/src/public/images/overview.gif?raw=true)
+![how it works](https://github.com/mattherman/mountebank/blob/master/src/public/images/overview.gif?raw=true)
 
 ## Install and Run
 
@@ -68,7 +66,7 @@ After installing and running, view the docs in your browser at <http://localhost
 
 You can always learn more by buying Brandon's book:
 
-[![Testing Microservices with Mountebank](https://github.com/bbyars/mountebank/blob/master/src/public/images/book.jpg)](https://www.manning.com/books/testing-microservices-with-mountebank?a_aid=mb&a_bid=ee3288f4)
+[![Testing Microservices with Mountebank](https://github.com/mattherman/mountebank/blob/master/src/public/images/book.jpg)](https://www.manning.com/books/testing-microservices-with-mountebank?a_aid=mb&a_bid=ee3288f4)
 
 ## Building
 
