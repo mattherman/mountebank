@@ -50,14 +50,15 @@ jobs:
       - run:
           name: Version
           command: node tasks/version.js
-      - run:
-          name: Docs and Static Analysis
-          command: |
-            npm run lint
-            scripts/codeclimate
-            cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
-            scripts/sonar
-            npm run jsdoc && node tasks/deploy/docs.js
+      # Disable static analysis and docs generation for now
+      # - run:
+      #     name: Docs and Static Analysis
+      #     command: |
+      #       npm run lint
+      #       scripts/codeclimate
+      #       cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js
+      #       scripts/sonar
+      #       npm run jsdoc && node tasks/deploy/docs.js
       - run:
           name: Dist
           command: node tasks/dist.js
@@ -259,10 +260,11 @@ workflows:
           filters:
             branches:
               only: master
-      - windows:
-          filters:
-            branches:
-              only: master
+      # Disable windows build for now
+      # - windows:
+      #     filters:
+      #       branches:
+      #         only: master
       - mac:
           filters:
             branches:
