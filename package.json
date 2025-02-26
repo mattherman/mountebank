@@ -1,17 +1,17 @@
 {
   "name": "mountebank",
   "version": "2.9.1",
-  "author": "Brandon Byars <brandon.byars@gmail.com>",
+  "author": "Matthew Herman <mattherman11@gmail.com>",
   "description": "Over the wire test doubles",
-  "homepage": "http://www.mbtest.org",
+  "homepage": "https://github.com/mattherman/mountebank",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bbyars/mountebank.git"
+    "url": "https://github.com/mattherman/mountebank.git"
   },
   "bugs": {
-    "url": "https://github.com/bbyars/mountebank/issues",
-    "email": "brandon.byars@gmail.com"
+    "url": "https://github.com/mattherman/mountebank/issues",
+    "email": "mattherman11@gmail.com"
   },
   "bin": {
     "mb": "./bin/mb"

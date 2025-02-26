@@ -23,10 +23,10 @@ echo "Running sonar-scanner..."
 sonar-scanner \
     -Dsonar.projectKey=mountebank \
     -Dsonar.projectName=mountebank \
-    -Dsonar.links.homepage=http://www.mbtest.org \
-    -Dsonar.links.ci=https://circleci.com/gh/bbyars/workflows/mountebank \
-    -Dsonar.links.issue=https://github.com/bbyars/mountebank/issues \
-    -Dsonar.links.scm=https://github.com/bbyars/mountebank \
+    -Dsonar.links.homepage=https://github.com/mattherman/mountebank \
+    -Dsonar.links.ci=https://circleci.com/gh/mattherman/workflows/mountebank \
+    -Dsonar.links.issue=https://github.com/mattherman/mountebank/issues \
+    -Dsonar.links.scm=https://github.com/mattherman/mountebank \
     -Dsonar.sources=src \
     -Dsonar.exclusions=src/public/scripts/jquery \
     -Dsonar.tests=test,mbTest \
