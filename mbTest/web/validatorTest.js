@@ -62,8 +62,11 @@ async function getHTML (path) {
     return removeKnownErrorsFrom(response.body);
 }
 
-// Skipping this test since it requires the website to be up at mbtest.org
-describe.skip('all pages in the mountebank website', function () {
+// This test will fail in the local devcontainer with "Too Many Requests".
+// It should be updated to throttle requests to avoid this, or the container
+// should be updated to increase whatever limit it is hitting in the network
+// stack.
+describe('all pages in the mountebank website', function () {
     this.timeout(60000);
 
     it('should be valid html', async function () {

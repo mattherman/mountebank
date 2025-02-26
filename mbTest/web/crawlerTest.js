@@ -21,8 +21,7 @@ const assert = require('assert'),
             || ([500, 502, 503].indexOf(statusCode) >= 0 && isLocalLink(link))
             || (statusCode === 403 && isBookLink(link));
 
-// Skipping this test because it requires the website to be up at mbtest.org
-describe.skip('The mountebank website', function () {
+describe('The mountebank website', function () {
     this.timeout(180000);
 
     it('should have no dead links and a valid sitemap', async function () {
