@@ -64,22 +64,22 @@ async function getHTML (path) {
 
 // Skipping this test until I can figure out how to deal with
 // the "Too Many Requests" errors I'm hitting.
-// describe.skip('all pages in the mountebank website', function () {
-//     this.timeout(60000);
+describe.skip('all pages in the mountebank website', function () {
+    this.timeout(60000);
 
-//     it('should be valid html', async function () {
-//         const blacklist = ['/feed', '/logs', '/metrics'],
-//             response = await api.get('/sitemap');
-//         assert.strictEqual(response.statusCode, 200);
+    it('should be valid html', async function () {
+        const blacklist = ['/feed', '/logs', '/metrics'],
+            response = await api.get('/sitemap');
+        assert.strictEqual(response.statusCode, 200);
 
-//         const siteLinks = response.body
-//                 .split(/\r?\n/)
-//                 .map(link => link.replace('http://www.mbtest.org', ''))
-//                 .filter(path => path !== '' && blacklist.indexOf(path) < 0),
-//             tests = siteLinks.map(async link => {
-//                 const html = await getHTML(link);
-//                 assertValid(link, html);
-//             });
-//         return Promise.all(tests);
-//     });
-// });
+        const siteLinks = response.body
+                .split(/\r?\n/)
+                .map(link => link.replace('http://www.mbtest.org', ''))
+                .filter(path => path !== '' && blacklist.indexOf(path) < 0),
+            tests = siteLinks.map(async link => {
+                const html = await getHTML(link);
+                assertValid(link, html);
+            });
+        return Promise.all(tests);
+    });
+});

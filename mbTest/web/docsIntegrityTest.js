@@ -25,40 +25,40 @@ async function validateDocs (page) {
 }
 
 // Disabling docs tests for now until I can get them running reliably in CI`
-// describe.skip('docs', function () {
-//     this.timeout(timeout);
+describe.skip('docs', function () {
+    this.timeout(timeout);
 
-//     [
-//         '/docs/api/mocks',
-//         '/docs/api/proxies',
-//         '/docs/api/injection',
-//         '/docs/api/xpath',
-//         '/docs/api/json',
-//         '/docs/protocols/https',
-//         '/docs/protocols/http',
-//         '/docs/api/jsonpath'
-//     ].forEach(page => {
-//         validateDocs(page);
-//     });
+    [
+        '/docs/api/mocks',
+        '/docs/api/proxies',
+        '/docs/api/injection',
+        '/docs/api/xpath',
+        '/docs/api/json',
+        '/docs/protocols/https',
+        '/docs/protocols/http',
+        '/docs/api/jsonpath'
+    ].forEach(page => {
+        validateDocs(page);
+    });
 
-//     // The logs change for out of process imposters
-//     if (isInProcessImposter('tcp')) {
-//         validateDocs('/docs/api/overview');
-//     }
+    // The logs change for out of process imposters
+    if (isInProcessImposter('tcp')) {
+        validateDocs('/docs/api/overview');
+    }
 
-//     // For tcp out of process imposters or using the --datadir option, I can't get the netcat tests working,
-//     // even with a -q1 replacement. The nc client ends the socket connection
-//     // before the server has a chance to respond.
-//     if (isInProcessImposter('tcp') && !isWindows && !isPersistent) {
-//         [
-//             '/docs/gettingStarted',
-//             '/docs/api/predicates',
-//             '/docs/api/behaviors',
-//             '/docs/api/stubs',
-//             '/docs/protocols/tcp'
-//         ].forEach(page => {
-//             validateDocs(page);
-//         });
-//     }
-// });
+    // For tcp out of process imposters or using the --datadir option, I can't get the netcat tests working,
+    // even with a -q1 replacement. The nc client ends the socket connection
+    // before the server has a chance to respond.
+    if (isInProcessImposter('tcp') && !isWindows && !isPersistent) {
+        [
+            '/docs/gettingStarted',
+            '/docs/api/predicates',
+            '/docs/api/behaviors',
+            '/docs/api/stubs',
+            '/docs/protocols/tcp'
+        ].forEach(page => {
+            validateDocs(page);
+        });
+    }
+});
 
