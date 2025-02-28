@@ -1,5 +1,5 @@
 {
-  "name": "mountebank",
+  "name": "@mattherman/mountebank",
   "version": "2.9.1",
   "author": "Matthew Herman <mattherman11@gmail.com>",
   "description": "Over the wire test doubles",
