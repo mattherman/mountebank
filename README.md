@@ -1,3 +1,7 @@
+# Update: August 2025
+
+Myself and a few others are working to transfer the original project to an [organization](https://github.com/mountebank-testing) for continued maintenance. This fork is no longer relevant.
+
 # Project Status
 
 This repository is a fork of [bbyars/mountebank](https://github.com/bbyars/mountebank).
